@@ -651,7 +651,7 @@ export const TransporteScreen = () => {
   };
 
   const handleVerifyAnomaliaTransporte = (transporte) => {
-    let info = transporte.ANOMALIA_OBSERVACION.replace(/\. \nE/g, '.<br> • E');
+    let info = transporte.ANOMALIA_OBSERVACION.replace(/\. \nL/g, '.<br> • L');
     info = info.replace(/\a:/g, 'as:<br> • ');
     info = info.replace(/Anomalías:/g, '<span class="text-danger" style="font-weight: bold; display: block; text-align: center !important; width: 100%;">Anomalías</span>');
     info = info.replace(/\. \n\. \n/g, ':<br>');
